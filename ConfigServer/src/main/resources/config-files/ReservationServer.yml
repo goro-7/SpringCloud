@@ -3,17 +3,17 @@ spring:
 
 spring:
 	application:
-		name:ReservationServer
+		name: ReservationServer
 server:
 	servlet:
-		contextPath=/reservationServer
+		contextPath: /reservationServer
 	port:5000
 
 management:
 	endpoints:
 		web:
 			exposure:
-				include=*
+				include: *
       
 eureka:
   client:
