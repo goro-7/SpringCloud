@@ -1,0 +1,16 @@
+spring:
+	application:
+		name: ReservationServer
+server:
+	servlet:
+		contextPath: /reservationServer
+	port: 5000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://grsdev-discovery-server.ap-south-1.elasticbeanstalk.com/discoveryServer
+
+reservations:
+	greeting:
+		message: mello
