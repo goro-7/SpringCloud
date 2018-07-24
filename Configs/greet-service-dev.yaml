@@ -1,9 +1,9 @@
 greetings:
    service:
-     message: I am instance 2
+     message: I am running on
 
 server:  
-  port: ${PORT:9002}
+  port: ${PORT:9001}
 eureka:  
   client:
     serviceUrl:
