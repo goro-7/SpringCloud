@@ -1,0 +1,28 @@
+server:
+ port: ${POST:8004}
+
+info: 
+ component: Gateway Server
+
+management:
+  endpoints:
+    web:
+     exposure:
+       include: "*"
+   
+zuul:
+ routes:
+  greet:
+   path: /greet/**
+   serviceId: greet-service
+   
+ribbon:
+  eureka: 
+    enabled: true
+  
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
