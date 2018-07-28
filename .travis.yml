@@ -1,5 +1,3 @@
 language: java
 jdk: oraclejdk8
-install: true
-script:
-- mvn install
+script: HEROKU_API_KEY="ee42aa60-8df2-4eef-9dd5-5f1f1935a929" mvn clean verify -Pheroku
