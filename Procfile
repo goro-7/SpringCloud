@@ -1,1 +1,1 @@
-web: java -jar target/ConfigServer-1.0.jar
+web: java -jar ConfigServer/target/ConfigServer-1.0.jar
