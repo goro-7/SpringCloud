@@ -11,7 +11,7 @@
 		<groupId>com.grsdev.springCloud</groupId>
 		<artifactId>SpringCloudMain</artifactId>
 		<version>1.0</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath>../pom.xml</relativePath>  <!-- lookup parent from repository -->
 	</parent>
 
 	<dependencies>
