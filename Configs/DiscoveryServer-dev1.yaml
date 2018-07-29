@@ -1,7 +1,6 @@
 server: 
    port: ${PORT:8761}
    servlet: 
-    contextPath: /DiscoveryServer
 
 management:
   endpoints:
@@ -15,8 +14,6 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistery: false
-    serviceUrl:
-      defaultZone: https://grsdev-discovery-server.herokuapp.com/DiscoveryServer/
 
 logging: 
   level:
