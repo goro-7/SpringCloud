@@ -19,4 +19,4 @@ logging:
      com: 
       netflix: 
        eureka: OFF
-      discovery: OFF
+       discovery: OFF
