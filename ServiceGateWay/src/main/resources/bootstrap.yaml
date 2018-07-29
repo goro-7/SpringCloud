@@ -3,4 +3,4 @@ spring:
    name: ServiceGateWay
  cloud: 
    config:
-    uri: http://localhost:8001/ConfigServer
+    uri: https://grsdev-config-server.herokuapp.com/ConfigServer
