@@ -25,6 +25,6 @@ eureka:
   client:
    registerWithEureka: true
    fetchRegistry: true
-   service-url:
+   serviceUrl:
      defaultZone: https://grsdev-discovery-server.herokuapp.com/DiscoveryServer/
     
