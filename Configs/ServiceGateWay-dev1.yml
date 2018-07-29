@@ -23,6 +23,8 @@ ribbon:
 
 eureka:
   client:
-    serviceUrl:
-      defaultZone: https://grsdev-discovery-server.herokuapp.com/DiscoveryServer/
-    registerWithEureka: true
+  registerWithEureka: true
+  fetchRegistry: true
+  serviceUrl:
+    defaultZone: https://grsdev-discovery-server.herokuapp.com/DiscoveryServer/
+    
