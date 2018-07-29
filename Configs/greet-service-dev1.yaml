@@ -4,6 +4,17 @@ greetings:
 
 server:  
   port: ${PORT:9001}
+  
+info: 
+ component: Greetings Service
+
+management:
+  endpoints:
+    web:
+     exposure:
+       include: "*"
+ 
+  
 eureka:  
   client:
     serviceUrl:
