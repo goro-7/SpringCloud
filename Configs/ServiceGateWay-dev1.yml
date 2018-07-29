@@ -19,6 +19,8 @@ zuul:
 ribbon:
   eureka: 
     enabled: true
+  ConnectTimeout: 60000
+  ReadTimeout: 60000
   
 eureka:  
   client:
