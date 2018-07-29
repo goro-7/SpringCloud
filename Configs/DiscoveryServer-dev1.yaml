@@ -1,0 +1,27 @@
+server: 
+   port: ${PORT:8761}
+   
+server:
+  servlet: 
+    contextPath: /DiscoveryServer
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka: 
+  client:
+    registerWithEureka: false
+    
+eureka:
+  client:
+    fetchRegistery: false
+
+logging: 
+  level:
+    com: 
+     netflix: 
+      eureka: OFF
+      discovery: OFF
