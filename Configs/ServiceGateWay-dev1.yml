@@ -16,25 +16,11 @@ zuul:
    path: /greet/**
    serviceId: greet-service
    
-ribbon:
-  eureka: 
-    enabled: true
-  ConnectTimeout: 60000
-  ReadTimeout: 60000
   
 eureka:  
   client:
     serviceUrl:
-      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761/eureka}
   instance:
     leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2    
-    
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 240000    
-    
+    leaseExpirationDurationInSeconds: 2 
