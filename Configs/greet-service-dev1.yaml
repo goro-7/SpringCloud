@@ -27,3 +27,15 @@ eureka:
 ribbon:
   eureka:
     enabled: true
+
+spring:
+    zipkin:
+       baseUrl: http:localhost:8007
+    sleuth:
+       sampler:
+          percentage: 1.0
+
+sample:
+   zipkin:
+      enabled:true 
+   
